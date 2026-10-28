@@ -1,0 +1,38 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="MIT"
+
+[[mods]]
+modId="tlm_tell_maids"
+version="1.0.0"
+displayName="Touhou Little Maid: Maid Command Chat"
+authors="Steven23334"
+logoFile="icon.png"
+description='''
+从聊天栏直接和车万女仆的 AI 对话，无需打开女仆界面。
+使用 /tellmaid <女仆名> <消息> 或短别名 /t <女仆名> <消息>。
+输入命令后按 Tab 可补全附近属于你的女仆名字。
+
+Forge 1.20.1 移植版，基于 NeoForge 1.21.1 原版重写。
+'''
+
+[[dependencies.tlm_tell_maids]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tlm_tell_maids]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1,1.21)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.tlm_tell_maids]]
+    modId="touhou_little_maid"
+    mandatory=true
+    versionRange="[1.5.3,)"
+    ordering="AFTER"
+    side="BOTH"
